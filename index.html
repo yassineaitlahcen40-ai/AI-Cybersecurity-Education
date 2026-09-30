@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An educational website about cybersecurity in AI systems, AI databases, AI data centres, and generative AI platforms.">
+  <title>Securing AI in the Age of Cyber Threats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#hero">
+        <span class="brand-mark">AI</span>
+        <span class="brand-text">CyberShield Learning Hub</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about">About</a>
+        <a href="#risk">Why At Risk</a>
+        <a href="#threats">Threats</a>
+        <a href="#protection">Protection</a>
+        <a href="#generative-ai">Generative AI</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#case-studies">Scenarios</a>
+        <a href="#references">References</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Educational Website for AI Cybersecurity Awareness</p>
+          <h1>Securing AI in the Age of Cyber Threats</h1>
+          <p class="hero-text">
+            AI systems, databases, data centres, and generative AI platforms are becoming valuable targets for cybercrime.
+            This project explores where the risks come from, how attacks happen, and what protection strategies help keep users and data safe.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#threats">Explore Threats</a>
+            <a class="button button-secondary" href="#quiz">Take the Quiz</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="signal-panel">
+            <div class="signal-header">
+              <span class="signal-dot"></span>
+              <span class="signal-dot"></span>
+              <span class="signal-dot"></span>
+            </div>
+            <div class="signal-ring signal-ring-one"></div>
+            <div class="signal-ring signal-ring-two"></div>
+            <div class="signal-core"><span>AI Security</span></div>
+            <div class="floating-node node-one">Data</div>
+            <div class="floating-node node-two">Models</div>
+            <div class="floating-node node-three">Prompts</div>
+            <div class="floating-node node-four">Trust</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Introduction</p>
+          <h2>Why AI cybersecurity now matters more than ever</h2>
+          <p>
+            AI cybersecurity focuses on protecting intelligent systems, the data they rely on, and the people affected by their decisions.
+            As AI becomes more connected to cloud services, large datasets, automated workflows, and public-facing tools, the attack surface grows with it.
+            In AI environments, a security failure can affect data privacy, model integrity, service availability, and user trust at the same time.
+          </p>
+        </div>
+        <div class="card-grid intro-grid">
+          <article class="info-card reveal">
+            <div class="card-icon">01</div>
+            <h3>Protecting intelligent systems</h3>
+            <p>Security is no longer only about servers. It now includes model behaviour, training pipelines, APIs, retrieval systems, and the quality of outputs users trust.</p>
+            <p class="micro-copy">If any one layer is compromised, the system may still appear to work while quietly giving unsafe or misleading results.</p>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">02</div>
+            <h3>More data, more exposure</h3>
+            <p>AI platforms often store prompts, datasets, logs, user records, and model outputs. That concentration of valuable information attracts attackers.</p>
+            <p class="micro-copy">The more connected the platform is, the more important it becomes to control who can access each dataset, tool, and model endpoint.</p>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">03</div>
+            <h3>Trust can break quickly</h3>
+            <p>If an AI system leaks data, produces manipulated outputs, or behaves unpredictably after an attack, users may lose confidence in both the platform and its results.</p>
+            <p class="micro-copy">For educational, healthcare, finance, or business uses, that loss of confidence can be just as damaging as the technical incident itself.</p>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon">04</div>
+            <h3>Security supports ethics</h3>
+            <p>Responsible AI depends on data protection, accountability, safe system design, and transparent incident response. Strong security helps make those goals possible.</p>
+            <p class="micro-copy">Without good security, privacy promises, fairness goals, and safe deployment policies become much harder to uphold in practice.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section risk-section" id="risk">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Risk Landscape</p>
+          <h2>Why AI systems are attractive targets</h2>
+          <p>AI environments combine valuable assets, complex infrastructure, and heavy user reliance, which makes them especially appealing to attackers. They often hold both the data attackers want and the computing environment they need to misuse or disrupt.</p>
+        </div>
+        <div class="risk-layout">
+          <article class="risk-block reveal">
+            <h3>Large data storage</h3>
+            <p>AI databases can hold training data, prompt histories, user records, system logs, and cached responses. A single compromise can expose large volumes of sensitive information.</p>
+            <p class="micro-copy">This matters because stolen prompts and logs may reveal private conversations, business plans, internal code, or research material.</p>
+          </article>
+          <article class="risk-block reveal">
+            <h3>High-value targets</h3>
+            <p>Models, proprietary datasets, and high-performance hardware are expensive to build. Attackers may steal them for financial gain, espionage, sabotage, or competitive advantage.</p>
+            <p class="micro-copy">A model can represent months of research, high operational cost, and a major intellectual property investment.</p>
+          </article>
+          <article class="risk-block reveal">
+            <h3>Complex infrastructure</h3>
+            <p>AI services often depend on APIs, cloud platforms, storage layers, model pipelines, orchestration tools, and distributed compute resources. More moving parts create more possible weak points.</p>
+            <p class="micro-copy">If one connected service is weak, an attacker may use it as a path into a much larger AI environment.</p>
+          </article>
+          <article class="risk-block reveal">
+            <h3>User trust and sensitive information</h3>
+            <p>People may share confidential prompts, business plans, unpublished ideas, or personal data with AI tools. That raises both privacy risks and reputational risks.</p>
+            <p class="micro-copy">When trust is high, users tend to share more. That makes secure handling, clear policies, and responsible storage even more important.</p>
+          </article>
+          <article class="risk-block reveal">
+            <h3>Growing use of generative AI</h3>
+            <p>Generative systems are widely used in education, business, software development, and content creation, so attacks can affect many users quickly and at scale.</p>
+            <p class="micro-copy">A single security flaw in a popular AI service can spread harmful outputs, leaked content, or service disruption across a very large audience.</p>
+          </article>
+        </div>
+        <div class="impact-strip reveal">
+          <article class="impact-item">
+            <h3>AI databases</h3>
+            <p>Need strong segmentation because stored prompts, embeddings, logs, and datasets can expose more than ordinary records.</p>
+          </article>
+          <article class="impact-item">
+            <h3>AI data centres</h3>
+            <p>Require tighter physical and network protection because compute nodes, accelerators, and orchestration systems are mission-critical assets.</p>
+          </article>
+          <article class="impact-item">
+            <h3>User-facing AI services</h3>
+            <p>Face direct misuse through prompts, stolen credentials, public APIs, and automated abuse from outside the organisation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="threats">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Threats</p>
+          <h2>Common cyber threats affecting AI systems</h2>
+          <p>Select a card to expand it. Each threat includes what it is, why it matters, how it affects users and organisations, and how the risk can be reduced.</p>
+        </div>
+        <div class="threat-grid">
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Data Breaches</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Unauthorised access to stored training data, user records, logs, or confidential prompts.</p>
+              <p><strong>Impact:</strong> Privacy loss, legal issues, reputational damage, and reduced trust in the platform. For organisations, a breach can trigger incident costs, service disruption, and long-term damage to credibility.</p>
+              <p><strong>Prevention:</strong> Encrypt stored data, limit permissions, monitor access patterns, minimise data retention, and separate sensitive stores from public-facing services.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Model Theft</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Attackers copy or extract a valuable model through direct theft, insecure storage, or repeated API querying.</p>
+              <p><strong>Impact:</strong> Loss of intellectual property, unfair copying of research effort, reduced competitive advantage, and possible misuse of the stolen model in unsafe settings.</p>
+              <p><strong>Prevention:</strong> Protect model files, rate-limit API calls, secure serving infrastructure, monitor unusual extraction behaviour, and restrict internal access to model assets.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Prompt Injection</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Malicious instructions are inserted into prompts or retrieved content to manipulate model behaviour.</p>
+              <p><strong>Impact:</strong> Unsafe responses, policy bypassing, leakage of protected information, incorrect actions by connected tools, or manipulation of a user's trust in the system.</p>
+              <p><strong>Prevention:</strong> Validate inputs, separate trusted and untrusted content, harden system prompts, constrain tool use, and apply output filtering before results reach users.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Adversarial Attacks</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Carefully crafted inputs are designed to confuse a model into making incorrect predictions or classifications.</p>
+              <p><strong>Impact:</strong> Reduced accuracy, unsafe decisions, and unreliable outputs in critical applications such as automated moderation, fraud detection, or decision support.</p>
+              <p><strong>Prevention:</strong> Test models against adversarial examples, improve robustness, monitor unusual input patterns, and avoid over-trusting single-model decisions.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Insider Threats</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Employees or contractors misuse legitimate access to view, change, or steal AI assets.</p>
+              <p><strong>Impact:</strong> Silent data leaks, sabotage, weakened controls, difficult forensic investigation, and long periods before the problem is even noticed.</p>
+              <p><strong>Prevention:</strong> Apply least-privilege access, audit activity, separate duties, use approval workflows for sensitive actions, and revoke unused permissions quickly.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>API Abuse</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Attackers exploit public-facing interfaces with excessive requests, stolen keys, or automated misuse.</p>
+              <p><strong>Impact:</strong> Service disruption, cost spikes, data exposure, easier model extraction attempts, and degraded experience for legitimate users.</p>
+              <p><strong>Prevention:</strong> Use authentication, rate limits, usage monitoring, key rotation, anomaly detection, and clear separation between public and privileged endpoints.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Ransomware</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Malware encrypts files, model assets, or supporting systems and demands payment to restore access.</p>
+              <p><strong>Impact:</strong> Downtime, operational loss, damaged research progress, delayed teaching or business activity, and possible permanent data loss.</p>
+              <p><strong>Prevention:</strong> Keep offline backups, patch systems, segment networks, test recovery plans, and reduce the spread of malware with strict account controls.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Data Poisoning</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Malicious or low-quality data is inserted into training or fine-tuning datasets so the model learns the wrong behaviour.</p>
+              <p><strong>Impact:</strong> Biased outputs, hidden weaknesses, reduced reliability, or deliberate backdoors that appear only under specific prompts.</p>
+              <p><strong>Prevention:</strong> Validate training sources, control data pipelines, document dataset changes, and review suspicious patterns before retraining.</p>
+            </div>
+          </article>
+          <article class="threat-card reveal">
+            <button class="threat-toggle" aria-expanded="false"><span>Supply Chain Weaknesses</span><span class="toggle-symbol">+</span></button>
+            <div class="threat-details">
+              <p><strong>What it is:</strong> Vulnerabilities enter the system through third-party libraries, model packages, plugins, cloud services, or deployment tools.</p>
+              <p><strong>Impact:</strong> Attackers may compromise the AI platform without directly attacking the core model first, making detection harder.</p>
+              <p><strong>Prevention:</strong> Patch dependencies, review suppliers, verify software sources, scan components regularly, and avoid giving extensions unnecessary privileges.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section protection-section" id="protection">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Protection Methods</p>
+          <h2>Core defences that strengthen AI systems</h2>
+          <p>Security works best as layers. These measures reduce risk across AI databases, data centres, and generative AI platforms by protecting confidentiality, integrity, availability, and user trust.</p>
+        </div>
+        <div class="protection-grid">
+          <article class="protection-card reveal"><div class="mini-icon">E</div><h3>Encryption</h3><p>Protects data at rest and in transit so stolen files or intercepted traffic are harder to use.</p><span>Why it matters: it limits the damage caused by unauthorised access and helps protect prompts, datasets, logs, and model-related files.</span></article>
+          <article class="protection-card reveal"><div class="mini-icon">M</div><h3>Multi-Factor Authentication</h3><p>Adds an extra identity check beyond passwords for admin portals, dashboards, and cloud accounts.</p><span>Why it matters: it makes stolen credentials less useful to attackers and helps reduce the impact of phishing.</span></article>
+          <article class="protection-card reveal"><div class="mini-icon">A</div><h3>Access Control</h3><p>Restricts who can view data, manage models, use APIs, or change infrastructure settings.</p><span>Why it matters: fewer permissions mean fewer opportunities for misuse, mistakes, or insider abuse.</span></article>
+          <article class="protection-card reveal"><div class="mini-icon">D</div><h3>Monitoring and Detection</h3><p>Tracks suspicious logins, abnormal traffic, failed requests, unusual model queries, and changes in system behaviour.</p><span>Why it matters: earlier detection supports faster response before a local problem becomes a larger incident.</span></article>
+          <article class="protection-card reveal"><div class="mini-icon">P</div><h3>Regular Updates and Patching</h3><p>Keeps software, libraries, operating systems, drivers, and security tools up to date.</p><span>Why it matters: many attacks rely on known but unpatched weaknesses in software that supports the AI environment.</span></article>
+          <article class="protection-card reveal"><div class="mini-icon">B</div><h3>Backups and Recovery</h3><p>Maintains clean copies of important data and configuration so systems can recover after incidents.</p><span>Why it matters: recovery planning reduces downtime and is essential if ransomware or destructive misuse affects operations.</span></article>
+          <article class="protection-card reveal"><div class="mini-icon">S</div><h3>Secure Data Handling</h3><p>Limits unnecessary collection, stores data safely, separates sensitive datasets, and removes information that no longer needs to be kept.</p><span>Why it matters: less exposed data means lower breach impact and better protection for user privacy.</span></article>
+          <article class="protection-card reveal"><div class="mini-icon">Z</div><h3>Zero-Trust Security</h3><p>Treats every request as untrusted until verified, even inside the organisation's own network.</p><span>Why it matters: it reduces risk from lateral movement, insider misuse, and over-trusting internal systems.</span></article>
+        </div>
+        <div class="trust-panel reveal">
+          <h3>Why user trust matters in AI services</h3>
+          <p>People rely on AI systems to handle prompts, generate content, assist with decisions, and sometimes process sensitive information. If a platform leaks data, gives manipulated outputs, or hides security problems, users may stop trusting both the service and the organisation behind it.</p>
+          <p class="micro-copy">Strong security is therefore not only a technical requirement. It is part of how AI services earn confidence, protect privacy, and show they can be used responsibly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section generative-section" id="generative-ai">
+      <div class="container generative-layout">
+        <div class="section-heading reveal">
+          <p class="section-tag">Generative AI Focus</p>
+          <h2>Why generative AI needs extra protection</h2>
+          <p>Generative AI systems process large datasets, open-ended prompts, and high volumes of user interaction. That combination creates unique security pressure compared with more traditional software, because inputs are less predictable and outputs are often trusted immediately by users.</p>
+        </div>
+        <div class="generative-panel reveal">
+          <div class="generative-point"><h3>Large datasets can contain hidden risk</h3><p>Training data may include personal, sensitive, copyrighted, or confidential information that must be handled carefully. Weak data governance increases the chance of privacy or compliance failures.</p></div>
+          <div class="generative-point"><h3>User prompts can reveal too much</h3><p>People often share business details, private ideas, or personal information when interacting with AI tools. If prompts are stored carelessly, they can become a valuable target.</p></div>
+          <div class="generative-point"><h3>Manipulated inputs can influence outputs</h3><p>Prompt injection and adversarial content can push a model into producing unsafe, misleading, or policy-breaking responses, especially when external content is fed into the system automatically.</p></div>
+          <div class="generative-point"><h3>Hidden information may be exposed</h3><p>Without careful design, systems may reveal internal instructions, stored context, retrieval data, or patterns learned from sensitive content that should remain protected.</p></div>
+          <div class="generative-point"><h3>Failure can scale fast</h3><p>Because generative AI is used by many people at once, one security weakness can affect thousands of users and outputs very quickly, making response speed especially important.</p></div>
+          <div class="generative-point"><h3>Connected tools increase risk</h3><p>When a generative model is linked to search tools, files, plugins, or databases, an unsafe prompt can create effects beyond text generation and influence real actions or data access.</p></div>
+        </div>
+        <div class="impact-strip reveal">
+          <article class="impact-item">
+            <h3>Why AI data centres need stronger protection</h3>
+            <p>AI data centres host dense compute workloads, specialised accelerators, model serving systems, and large storage layers. Disruption here affects more than one app because many AI services may depend on the same infrastructure.</p>
+          </article>
+          <article class="impact-item">
+            <h3>Physical and network security both matter</h3>
+            <p>Protecting the building is not enough. AI data centres also need segmentation, strict admin controls, monitoring, patching, and resilience planning so an attacker cannot move from one system into many others.</p>
+          </article>
+          <article class="impact-item">
+            <h3>Availability is a security issue</h3>
+            <p>Even when data is not stolen, service outages, ransomware, or abuse of compute resources can stop teaching, business, or research work that depends on AI availability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section quiz-section" id="quiz">
+      <div class="container quiz-layout">
+        <div class="section-heading reveal">
+          <p class="section-tag">Interactive Quiz</p>
+          <h2>Test your understanding of AI cybersecurity</h2>
+          <p>Answer one question at a time, receive instant feedback with a short explanation, and try to beat your best score saved in this browser. The question order changes each time the quiz restarts.</p>
+        </div>
+        <div class="quiz-card reveal">
+          <div class="quiz-topbar">
+            <span id="quiz-progress">Question 1 of 15</span>
+            <span id="best-score">Best score: 0/15</span>
+          </div>
+          <div class="quiz-body">
+            <h3 id="quiz-question">Loading question...</h3>
+            <div id="quiz-answers" class="quiz-answers"></div>
+            <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+          </div>
+          <div class="quiz-controls">
+            <button id="next-question" class="button button-primary" disabled>Next Question</button>
+            <button id="restart-quiz" class="button button-secondary hidden">Restart Quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section case-section" id="case-studies">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Case Studies</p>
+          <h2>Example scenarios that show how problems unfold</h2>
+          <p>These short examples demonstrate how technical weaknesses and human decisions can combine to create serious security incidents.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <span class="case-label">Scenario 01</span>
+            <h3>AI Platform Data Leak</h3>
+            <p><strong>What happened:</strong> An AI writing service stored prompt histories without strong access controls, exposing confidential student and business content.</p>
+            <p><strong>What went wrong:</strong> Weak permissions and poor data retention rules left too much information available for too long.</p>
+            <p><strong>How to prevent it:</strong> Encrypt records, restrict access by role, and remove old prompt data that no longer needs to be stored.</p>
+          </article>
+          <article class="case-card reveal">
+            <span class="case-label">Scenario 02</span>
+            <h3>Compromised Employee Account</h3>
+            <p><strong>What happened:</strong> A staff member managing an AI data centre had their password stolen through phishing.</p>
+            <p><strong>What went wrong:</strong> The account lacked multi-factor authentication and had broader permissions than necessary.</p>
+            <p><strong>How to prevent it:</strong> Use MFA, review access rights often, and alert security teams to suspicious login activity.</p>
+          </article>
+          <article class="case-card reveal">
+            <span class="case-label">Scenario 03</span>
+            <h3>Malicious Prompt Attack</h3>
+            <p><strong>What happened:</strong> A generative AI assistant was manipulated by crafted prompts that attempted to bypass safety instructions.</p>
+            <p><strong>What went wrong:</strong> Untrusted content was not separated clearly from system instructions, and output checks were limited.</p>
+            <p><strong>How to prevent it:</strong> Strengthen prompt design, validate retrieved content, and filter unsafe responses before display.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section stats-section" id="stats">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Impact Snapshot</p>
+          <h2>Why these risks deserve attention</h2>
+          <p>The figures below are educational sample indicators designed to highlight how quickly security failures can affect AI users, systems, and organisations.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <h3><span class="counter" data-target="68">0</span>%</h3>
+            <p>of sampled AI services in this project scenario rely on sensitive stored data.</p>
+          </article>
+          <article class="stat-card reveal">
+            <h3><span class="counter" data-target="240">0</span>M+</h3>
+            <p>records represented as potentially exposed across large-scale AI database incidents.</p>
+          </article>
+          <article class="stat-card reveal">
+            <h3><span class="counter" data-target="7">0</span>x</h3>
+            <p>faster impact spread when a widely used generative platform suffers a major security failure.</p>
+          </article>
+          <article class="stat-card reveal">
+            <h3><span class="counter" data-target="91">0</span>%</h3>
+            <p>of trust recovered more slowly when organisations communicate poorly after a breach.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section references-section" id="references">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">References</p>
+          <h2>Source section ready for academic editing</h2>
+          <p>These placeholder entries are formatted to look professional and can be replaced later with final academic references or lecturer-approved sources.</p>
+        </div>
+        <div class="references-list reveal">
+          <article class="reference-item"><p>National Institute of Standards and Technology. (Year). <em>AI Risk Management and Secure System Guidance</em>. Placeholder edition for final citation update.</p></article>
+          <article class="reference-item"><p>European Union Agency for Cybersecurity. (Year). <em>Cybersecurity Challenges in Artificial Intelligence Environments</em>. Placeholder citation for project editing.</p></article>
+          <article class="reference-item"><p>Academic Author, A. A., &amp; Academic Author, B. B. (Year). <em>Threat Modelling for Generative AI Platforms</em>. Journal title placeholder, volume(issue), pages.</p></article>
+          <article class="reference-item"><p>Industry Security Report Team. (Year). <em>Data Centre Security Trends for Machine Learning Infrastructure</em>. Placeholder publisher for final reference formatting.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>CyberShield Learning Hub</h2>
+        <p>An educational university project exploring cybersecurity risks and protection strategies for modern AI systems.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#threats">Threats</a>
+        <a href="#protection">Protection</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#references">References</a>
+      </div>
+      <div>
+        <p>&copy; 2026 CyberShield Learning Hub. Built for educational use only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
